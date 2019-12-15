@@ -1,0 +1,377 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.nvg{
+	background-color: #d470c6;
+	display: flex;
+	justify-content: center;
+}
+.nvg a{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 14px 28px;
+}
+.nvg a:hover{
+	background-color: white;
+	color: black;
+}
+.content p{
+	text-align: justify;
+	margin: 10px;
+	padding: 10px;
+}
+#toggle
+{
+	display: none;
+}
+.togglearea
+{
+	background-color: #d470c6;
+	border-bottom: 2px solid white;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+.togglearea label
+{
+	background-color: white;
+	height: 45px;
+	width: 50px;
+	color: black;
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.togglearea label span
+{
+	background-color: black;
+	height: 4px;
+	width: 70%;
+	margin: 2px 0px;
+}
+.togglearea
+{
+	display: none;
+}
+@media screen and (max-width: 700px)
+{
+	.nvg
+	{
+		flex-direction: column;
+		display: none;
+	}
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea
+	{	
+		display: flex;
+	}
+}
+
+
+
+
+
+h1{
+	text-align: center;
+	padding-bottom: 15 px;
+	font-size: 40px;
+	color: #1C40FF;
+}
+table{
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-top: 10px;
+}
+td, th{
+	 border: 1px solid black;
+}
+.padding{
+	padding-bottom: 2rem;
+}
+.CV h2,h3{
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #1C40FF;
+	
+}
+.CV ol,dl,ul,p{
+	padding-left: 30px;
+}
+.CV li{
+	padding-left: 40px;
+	list-style-position: inside;
+}
+.CV{
+	width: 100%;
+}
+.wrapper{
+	width: 100%;
+}
+.slike{
+height: 50%;	
+}
+.banner{
+	display: none;
+}
+.personal-info{
+	width: 100%
+}
+.personal-info h2{
+	padding: 30px 30px 20px;
+	font-family: arial;
+	font-size: 50px;
+	line-height: 44px;
+	color: #1C40FF;
+}
+.personal-info p{
+	padding: 0px 30px 20px;
+	font-size: 16px;
+	line-height: 24px;
+	
+}
+.me{
+	width: 100%;
+}
+.line{
+	display: none;
+}
+form{
+     padding: 0px 30px 0px;
+}
+.contact{
+	background-color: #fdedff;
+}
+
+.team-area{
+    padding: 60px 0;
+}
+
+.section-heading {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-size: 65px;
+	letter-spacing: 5px;
+}
+
+.team-area .card {
+    border: none;
+    background: #ffffff;
+}
+.img-area{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.team-single:hover .side-two {
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.team-single:hover .side-one {
+    transform: rotateY(180deg);
+}
+
+.content-area {
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.side-one {
+    position: relative;
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.side-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    transform: rotateY(-180deg);
+}
+
+.side-one,
+.side-two {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.side-one .card,
+.side-two .card {
+    min-height: 312px;
+}
+
+.side-two .card a {
+    font-size: 18px;
+    color: #1C40FF;
+}
+
+h4 {
+    color: #1C40FF;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+.side-one .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #d470c6;
+}
+
+
+ @media only screen and (min-width: 768px){
+	.banner{
+	display: block;
+	width: 100%;
+	padding-bottom: 30px;
+}
+   .wrapper{
+	width: 600px;
+	margin: 0 auto;
+	
+}
+.personal-info h2{
+	padding: 20px 0px 0px;
+}
+.personal-info p{
+	padding: 20px 0px 0px;	
+}
+.me{
+	padding-top: 30px;
+}
+.line{
+	width: 100%;
+	height: 30px;
+	display: block;
+}
+}
+ @media only screen and (min-width: 1000px){
+	.banner{
+	display: block;
+	width: 100%;
+	padding-bottom: 15px;
+}
+   .wrapper{
+	width: 1000px;
+	
+}
+.personal-info{
+	width: 50%;
+	float: right;
+	 margin-bottom: 60px;
+}
+.personal-info h2{
+	padding: 20px 0px 0px 30px;
+}
+.personal-info p{
+	padding: 20px 0px 0px 30px;	
+}
+.me{
+	padding-top: 0px;
+	width: 50%;
+	float: left;
+   padding-bottom: 10px;
+}
+
+.line{
+	width: 100%;
+	height: 30px;
+	display: block;
+}
+
+.progress-title{
+    font-size: 1rem !important;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0 10px;
+}
+.progress-outer{
+    background: #fff;
+    padding: 5px 60px 5px 5px;
+    border: 3px solid #bebfbf;
+    border-radius: 45px;
+    position: relative;
+}
+.progress{
+    background: #bebfbf;
+    border-radius: 20px;
+    margin: 0;
+}
+.progress .progress-bar{
+    border-radius: 10px;
+    box-shadow: none;
+    animation: animate-positive 2s;
+}
+.progress .progress-value{
+    font-size: 20px;
+    font-weight: 700;
+    color: #6b7880;
+    position: absolute;
+    top: .2px;
+    right: 10px;
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
